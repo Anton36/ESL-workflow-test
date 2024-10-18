@@ -6,6 +6,7 @@ int main() {
     scanf("%lf %lf %lf",&vector1.x,&vector1.y,&vector1.z);
     scanf("%lf %lf %lf",&vector2.x,&vector2.y,&vector2.z);
 
+
     vector3D v_sum = sum(vector1, vector2);
     vector3D v_sub = sub(vector1, vector2);
     double v_dot = dot(vector1, vector2);
