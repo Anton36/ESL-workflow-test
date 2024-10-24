@@ -4,18 +4,18 @@ typedef struct {
     double x;
     double y;
     double z;
-} vector3D;
+} vector3d;
 
 
-vector3D sum(vector3D a, vector3D b);
+void sum(const vector3d *a, const vector3d *b,vector3d *out);
 
 
-vector3D sub(vector3D a, vector3D b);
+void sub(const vector3d *a, const vector3d *b,vector3d *out);
 
 
-double dot(vector3D a, vector3D b);
+double dot(const vector3d *a, const vector3d *b);
 
 
-vector3D cross(vector3D a, vector3D b);
+void cross(const vector3d *a, const vector3d *b,vector3d *out);
 
 #endif
