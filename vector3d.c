@@ -1,6 +1,6 @@
 #include "vector3d.h"
 
-void sum(const vector3d *v1, const vector3d *v2,vector3d *out) {
+void vector_sum(const vector3d_t *v1, const vector3d_t *v2,vector3d_t *out) {
     
     out->x = v1->x + v2->x;
     out->y = v1->y + v2->y;
@@ -8,7 +8,7 @@ void sum(const vector3d *v1, const vector3d *v2,vector3d *out) {
     
 }
 
-void sub(const vector3d *v1, const vector3d *v2,vector3d *out) {
+void vector_sub(const vector3d_t *v1, const vector3d_t *v2,vector3d_t *out) {
     
     out->x = v1->x - v2->x;
     out->y = v1->y - v2->y;
@@ -16,11 +16,11 @@ void sub(const vector3d *v1, const vector3d *v2,vector3d *out) {
     
 }
 
-double dot(const vector3d *v1, const vector3d *v2) {
+double vector_dot(const vector3d_t *v1, const vector3d_t *v2) {
     return v1->x * v2->x + v1->y * v2->y + v1->z * v2->z;
 }
 
-void cross(const vector3d *v1, const vector3d *v2,vector3d *out) {
+void vector_cross(const vector3d_t *v1, const vector3d_t *v2,vector3d_t *out) {
     
     out->x = v1->y * v2->z - v1->z * v2->y;
     out->y = v1->z * v2->x - v1->x * v2->z;

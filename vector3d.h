@@ -1,21 +1,21 @@
-#ifndef VECTOR3D_H
-#define VECTOR3D_H
+#ifndef vector3d_H
+#define vector3d_H
 typedef struct {
     double x;
     double y;
     double z;
-} vector3d;
+} vector3d_t;
 
 
-void sum(const vector3d *a, const vector3d *b,vector3d *out);
+void vector_sum(const vector3d_t *a, const vector3d_t *b,vector3d_t *out);
 
 
-void sub(const vector3d *a, const vector3d *b,vector3d *out);
+void vector_sub(const vector3d_t *a, const vector3d_t *b,vector3d_t *out);
 
 
-double dot(const vector3d *a, const vector3d *b);
+double vector_dot(const vector3d_t *a, const vector3d_t *b);
 
 
-void cross(const vector3d *a, const vector3d *b,vector3d *out);
+void vector_cross(const vector3d_t *a, const vector3d_t *b,vector3d_t *out);
 
 #endif
